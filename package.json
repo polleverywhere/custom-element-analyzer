@@ -1,0 +1,12 @@
+{
+  "name": "custom-element-analyzer",
+  "version": "0.0.1",
+  "description": "Analyze JSDocs in custom elements and produces a custom-elements.json file",
+  "main": "index.js",
+  "author": "Steel Fu <steelfu@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "npx jsdoc -X -c jsdoc.config.json web-component-test.js"
+  }
+}
