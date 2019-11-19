@@ -6,11 +6,14 @@ function name () {
 }
 
 /**
- * Here is a description of my web component.
+ * Here is a description of my web component with a really long description
+ * that also has a line break and also some usage examples:
+ *
+ * `<my-element>blah blah blah</my-element>`
  * 
  * @element my-element
  * 
- * @fires change - This jsdoc tag makes it possible to document events.
+ * @fires {Boolean} change=wut - This jsdoc tag makes it possible to document events.
  * @fires submit
  * 
  * @attr {Boolean} disabled=false - This jsdoc tag documents an attribute.

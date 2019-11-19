@@ -6,7 +6,17 @@
   "author": "Steel Fu <steelfu@gmail.com>",
   "license": "MIT",
   "private": false,
-  "scripts": {
-    "test": "npx jsdoc -X -c jsdoc.config.json web-component-test.js"
+  "bin": {
+    "custom-element-analyzer": "index.js"
+  },
+  "dependencies": {
+    "commander": "^4.0.1",
+    "glob": "^7.1.6",
+    "jsdoc-api": "^5.0.4",
+    "lodash": "^4.17.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steel/custom-element-analyzer.git"
   }
 }
