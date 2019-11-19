@@ -30,7 +30,7 @@ function name () {
  * @cssprop --main-bg-color - This jsdoc tag can be used to document css custom properties.
  * @cssprop --main-color
  */
-class MyElement extends HTMLElement {
+export default class MyElement extends HTMLElement {
   static get observedAttributes () { return ['disabled', 'color'] }
 
   constructor (options = {}) {

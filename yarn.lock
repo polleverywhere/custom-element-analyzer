@@ -130,6 +130,11 @@ graceful-fs@^4.1.9:
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
   integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
+in-publish@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/in-publish/-/in-publish-2.0.0.tgz#e20ff5e3a2afc2690320b6dc552682a9c7fadf51"
+  integrity sha1-4g/146KvwmkDILbcVSaCqcf631E=
+
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -165,6 +170,14 @@ jsdoc-api@^5.0.4:
     temp-path "^1.0.0"
     walk-back "^3.0.1"
 
+jsdoc-export-default-interop@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npmjs.org/jsdoc-export-default-interop/-/jsdoc-export-default-interop-0.3.1.tgz#462fa9f9b4a2ab06a0f4d0624143d02e5ba2d05f"
+  integrity sha1-Ri+p+bSiqwag9NBiQUPQLlui0F8=
+  dependencies:
+    in-publish "^2.0.0"
+    lodash "^4.0.1"
+
 jsdoc@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npmjs.org/jsdoc/-/jsdoc-3.6.3.tgz#dccea97d0e62d63d306b8b3ed1527173b5e2190d"
@@ -199,7 +212,7 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-lodash@^4.17.14, lodash@^4.17.15:
+lodash@^4.0.1, lodash@^4.17.14, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==

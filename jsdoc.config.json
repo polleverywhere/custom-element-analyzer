@@ -4,6 +4,7 @@
     "dictionaries": ["jsdoc"]
   },
   "plugins": [
+    "node_modules/jsdoc-export-default-interop/dist/index",
     "lib/definitions.js"
   ],
   "templates": {
