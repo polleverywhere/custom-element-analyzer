@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "bin": {
-    "custom-element-analyzer": "index.js"
+    "custom-element-analyzer": "cli.js"
   },
   "dependencies": {
     "commander": "^4.0.1",
