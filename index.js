@@ -16,6 +16,11 @@ function processFile (file) {
   })
 
   const tag = processor.process(doclets)
+
+  if (program.debug) {
+    console.log('File jsdoc', util.inspect(doclets, { depth: null }))
+  }
+
   if (tag) {
     document.tags.push(tag)
   }
