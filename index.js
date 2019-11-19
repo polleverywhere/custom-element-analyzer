@@ -16,7 +16,9 @@ function processFile (file) {
   })
 
   const tag = processor.process(doclets)
-  document.tags.push(tag)
+  if (tag) {
+    document.tags.push(tag)
+  }
 }
 
 program
