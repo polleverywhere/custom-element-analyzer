@@ -5,7 +5,7 @@
   },
   "plugins": [
     "node_modules/jsdoc-export-default-interop/dist/index",
-    "lib/definitions.js"
+    "lib/jsdoc/plugin.js"
   ],
   "templates": {
     "cleverLinks": false,
