@@ -9,6 +9,15 @@
   "bin": {
     "custom-element-analyzer": "cli.js"
   },
+  "keywords": [
+    "custom elements",
+    "web components",
+    "custom-element-json"
+  ],
+  "bugs": {
+    "url": "https://github.com/steel/custom-element-analyzer/issues"
+  },
+  "homepage": "https://github.com/steel/custom-element-analyzer#readme",
   "dependencies": {
     "commander": "^4.0.1",
     "glob": "^7.1.6",
