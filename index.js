@@ -8,7 +8,8 @@ function processFile (file) {
 
   const doclets = jsdoc.explainSync({
     files: file,
-    configure: `${__dirname}/jsdoc.config.json`
+    configure: `${__dirname}/jsdoc.config.json`,
+    cache: true
   })
 
   const tag = processor.process(doclets)
