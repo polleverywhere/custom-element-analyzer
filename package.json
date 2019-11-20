@@ -1,6 +1,6 @@
 {
   "name": "custom-element-analyzer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Analyze JSDocs in custom elements and produces a custom-elements.json file",
   "main": "index.js",
   "author": "Steel Fu <steelfu@gmail.com>",
