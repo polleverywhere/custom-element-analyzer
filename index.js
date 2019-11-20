@@ -22,7 +22,7 @@ function processFile (file) {
 
 function analyze (files) {
   const document = {
-    version: 2
+    version: 1.2
   }
 
   document.tags = files.reduce((accum, file) => {
