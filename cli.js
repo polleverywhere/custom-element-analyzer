@@ -8,7 +8,7 @@ const analyze = require('./index')
 
 program
   .name('custom-element-analyzer')
-  .usage('[options] <directory>')
+  .usage('[options] <directory or file> ...')
   .option('-d, --debug', 'output extra debugging and output to console instead of file')
   .option('-o, --out <file-name>', 'output file name. Defaults to custom-elements.json')
   .parse(process.argv)
@@ -19,14 +19,21 @@ if (program.debug) {
   console.log(program.args)
 }
 
+const files = []
+
 if (program.args.length > 0) {
-  path = program.args[0]
+  program.args.forEach((token) => {
+    if (fs.lstatSync(token).isFile()) {
+      files.push(token)
+    } else {
+      // glob the path
+      const filesFound = glob.sync(`${token}/**/*.js`)
+      files.splice(files.length, 0, ...filesFound)
+    }
+  })
 } else {
   program.help()
 }
-
-const globOpts = {}
-const files = glob.sync(`${path}/**/*.js`, globOpts)
 
 if (program.debug) {
   console.log('Found files', files)
