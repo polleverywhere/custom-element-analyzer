@@ -29,7 +29,7 @@ const globOpts = {}
 const files = glob.sync(`${path}/**/*.js`, globOpts)
 
 if (program.debug) {
-  console.log(files)
+  console.log('Found files', files)
 }
 
 const document = analyze(files)
