@@ -26,9 +26,13 @@ function analyze (files) {
   }
 
   document.tags = files.reduce((accum, file) => {
-    const tag = processFile(file)
-    if (tag) {
-      accum.push(tag)
+    try {
+      const tag = processFile(file)
+      if (tag) {
+        accum.push(tag)
+      }
+    } catch (e) {
+      console.error('Failed to process file', file, e)
     }
 
     return accum
