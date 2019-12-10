@@ -30,7 +30,9 @@ export default class MyElement extends HTMLElement {
   /**
    * @attr {string} color=blue - This will merge with the definition above
    */
-  static get observedAttributes () { return ['switch', 'disabled', 'color'] }
+  static get observedAttributes () {
+    return ['switch', 'disabled', 'color']
+  }
 
   constructor (options = {}) {
     Object.assign({
