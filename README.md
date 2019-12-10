@@ -31,6 +31,7 @@ Options:
   -d, --debug            output extra debugging and output to console instead of file
   -o, --out <file-name>  output file name. Defaults to custom-elements.json
   -h, --help             output usage information
+  -n, --no-cache         disable jsdoc caching to force regenerating source jsdoc
 ```
 
 ### Supported tags
@@ -45,6 +46,32 @@ Options:
 | @cssprop | Describes a custom css property | `@cssprop --bg-color=#fff - Background color with a default value`
 
 Tags that are declared more than once will merge into the previous declaration filling in only what wasn't previously there.
+
+### Supported expressions
+
+#### observedAttributes
+
+Even without any comments and jsdoc tags, the following statement
+
+```js
+static get observedAttributes () {
+  ...
+  return ['attr1', 'attr2']
+}
+```
+
+will be interpreted as this:
+
+```js
+/**
+ * @attribute attr1
+ * @attribute attr2
+ */
+ static get observedAttributes () {
+  ...
+  return ['attr1', 'attr2']
+}
+```
 
 ### Example file
 

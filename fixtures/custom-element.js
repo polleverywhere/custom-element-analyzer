@@ -28,10 +28,11 @@ function name () {
  */
 export default class MyElement extends HTMLElement {
   /**
-   * @attr {boolean} disabled - the disabled attribute
    * @attr {string} color=blue - This will merge with the definition above
    */
-  static get observedAttributes () { return ['switch', 'disabled', 'color'] }
+  static get observedAttributes () {
+    return ['switch', 'disabled', 'color']
+  }
 
   constructor (options = {}) {
     Object.assign({
