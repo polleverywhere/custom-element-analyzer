@@ -11,7 +11,7 @@ program
   .usage('[options] <directory or file> ...')
   .option('-d, --debug', 'output extra debugging and output to console instead of file')
   .option('-o, --out <file-name>', 'output file name. Defaults to custom-elements.json')
-  .option('-n, --no-cache', 'disable jsdoc caching')
+  .option('-n, --no-cache', 'disable jsdoc caching to force regenerating source jsdoc')
   .parse(process.argv)
 
 if (program.debug) console.log(program.opts())

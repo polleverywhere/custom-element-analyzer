@@ -31,7 +31,7 @@ Options:
   -d, --debug            output extra debugging and output to console instead of file
   -o, --out <file-name>  output file name. Defaults to custom-elements.json
   -h, --help             output usage information
-  -n, --no-cache         disable jsdoc caching
+  -n, --no-cache         disable jsdoc caching to force regenerating source jsdoc
 ```
 
 ### Supported tags
