@@ -5,7 +5,8 @@
   },
   "plugins": [
     "node_modules/jsdoc-export-default-interop/dist/index",
-    "lib/jsdoc/plugin.js"
+    "lib/jsdoc/observed_attributes.js",
+    "lib/jsdoc/tags/index.js"
   ],
   "templates": {
     "cleverLinks": false,
