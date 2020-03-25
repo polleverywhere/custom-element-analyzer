@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander')
+const path = require('path')
 const glob = require('glob')
 const fs = require('fs')
 const util = require('util')
@@ -28,7 +29,9 @@ if (program.args.length > 0) {
       files.push(token)
     } else {
       // glob the path
-      const filesFound = glob.sync(`${token}/**/*.js`)
+      const resolvedPath = path.resolve(token)
+      const filesFound = glob.sync(`${resolvedPath}/**/*.js`, { ignore: ['**/node_modules/**'] })
+      console.log(filesFound)
       files.splice(files.length, 0, ...filesFound)
     }
   })
