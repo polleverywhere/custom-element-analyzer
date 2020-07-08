@@ -24,9 +24,17 @@ const files = []
 
 if (program.args.length > 0) {
   program.args.forEach((token) => {
-    if (fs.lstatSync(token).isFile()) {
-      files.push(token)
-    } else {
+    try {
+      const stats = fs.lstatSync(token)
+
+      if (stats.isFile()) {
+        files.push(token)
+      } else {
+        // glob the path
+        const filesFound = glob.sync(`${token}/**/*.js`)
+        files.splice(files.length, 0, ...filesFound)
+      }
+    } catch (e) {
       // glob the path
       const filesFound = glob.sync(`${token}/**/*.js`)
       files.splice(files.length, 0, ...filesFound)
