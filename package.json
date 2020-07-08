@@ -15,9 +15,9 @@
     "custom-element-json"
   ],
   "bugs": {
-    "url": "https://github.com/steel/custom-element-analyzer/issues"
+    "url": "https://github.com/polleverywhere/custom-element-analyzer/issues"
   },
-  "homepage": "https://github.com/steel/custom-element-analyzer#readme",
+  "homepage": "https://github.com/polleverywhere/custom-element-analyzer#readme",
   "dependencies": {
     "commander": "^4.0.1",
     "glob": "^7.1.6",
@@ -27,6 +27,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/steel/custom-element-analyzer.git"
+    "url": "https://github.com/polleverywhere/custom-element-analyzer.git"
   }
 }
